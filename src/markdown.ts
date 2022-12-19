@@ -12,8 +12,13 @@ export async function generateMarkDown (commits: GitCommit[], config: ChangelogC
 
   // Version Title
   const v = config.newVersion && `v${config.newVersion}`
+  const today = new Date()
+  const year = today.getFullYear()
+  const month = today.getMonth() + 1 // months are 0-indexed
+  const day = today.getDate()
+  const currentDate = `(${year}/${month}/${day})`
   markdown.push('',
-    '## ' + (v || `${config.from}...${config.to}`)
+    '## ' + (v + currentDate || `${config.from}...${config.to}`)
     , '')
 
   if (config.github) {
