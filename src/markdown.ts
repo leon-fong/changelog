@@ -76,12 +76,9 @@ export async function generateMarkDown (commits: GitCommit[], config: ChangelogC
 
   if (authors.length) {
     markdown.push(
-      '', '### ' + '❤️  Contributors', '',
+      '', '### ' + 'Contributors', '',
       ...authors.map((i) => {
-        const _email = Array.from(i.email).filter(e => !e.includes('noreply.github.com'))[0]
-        const email = _email ? `<${_email}>` : ''
-        const github = i.github ? `([@${i.github}](http://github.com/${i.github}))` : ''
-        return `- ${i.name} ${github || email}`
+        return `- ${i.name}`
       })
     )
   }
