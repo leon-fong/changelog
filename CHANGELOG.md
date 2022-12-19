@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v0.5.2(2022/12/19)
+
+
+### Fixes
+
+  - Version invalid (f33c49c)
+
+### Chore
+
+  - Add npmrc (40b84eb)
+
+### Contributors
+
+- Fanglm
+
 ## v0.5.1(2022/12/19)
 
 
