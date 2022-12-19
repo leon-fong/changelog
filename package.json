@@ -1,8 +1,8 @@
 {
-  "name": "changelogen",
+  "name": "changelogens",
   "version": "0.5.0",
   "description": "Generate Beautiful Changelogs using Conventional Commits",
-  "repository": "unjs/changelogen",
+  "repository": "leon-fong/changelogens",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
@@ -13,7 +13,7 @@
     }
   },
   "bin": {
-    "changelogen": "./dist/cli.mjs"
+    "changelogens": "./dist/cli.mjs"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -23,11 +23,11 @@
   ],
   "scripts": {
     "build": "unbuild",
-    "changelogen": "jiti ./src/cli.ts",
+    "changelogens": "jiti ./src/cli.ts",
     "dev": "vitest dev",
     "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
     "prepack": "unbuild",
-    "release": "pnpm changelogen --release && git push --follow-tags && pnpm publish",
+    "release": "pnpm changelogens --release && git push --follow-tags && pnpm publish",
     "test": "pnpm lint && vitest run --coverage"
   },
   "dependencies": {
