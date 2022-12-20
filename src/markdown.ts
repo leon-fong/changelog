@@ -18,7 +18,7 @@ export async function generateMarkDown (commits: GitCommit[], config: ChangelogC
   const day = today.getDate()
   const currentDate = `(${year}/${month}/${day})`
   markdown.push('',
-    '## ' + (v || `${config.from}...${config.to} `) + currentDate
+    '## ' + (v || `${config.from}...${config.to}`) + ' ' + currentDate
     , '')
 
   if (config.github) {
