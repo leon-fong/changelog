@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v0.5.3 (2022/12/20)
+
+
+### Documentation
+
+  - Add badges in README (e485175)
+
+### Chore
+
+  - **release:** V0.5.3 (e2b3faf)
+
+### Contributors
+
+- Fanglm
+
 ## v0.5.2(2022/12/19)
 
 
